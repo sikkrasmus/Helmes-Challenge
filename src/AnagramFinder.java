@@ -22,7 +22,7 @@ public class AnagramFinder {
         long startTime = System.currentTimeMillis();
         String result = getAnagrams(argv[0],argv[1]);
         long stop = System.currentTimeMillis() - startTime;
-        System.out.println(stop + "," + result);
+        System.out.println((stop/1000.0) + "," + result);
     }
 
     private static String getAnagrams(String filePath, String word) throws IOException {
